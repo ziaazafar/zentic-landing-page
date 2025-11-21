@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zentic Labs | Performance Marketing & Growth Engineering</title>
+    <meta name="description" content="We engineer profit. High-velocity ad structures and server-side tracking for scaling revenue.">
+    
+    <!-- Tailwind CSS (via CDN for modern styling without build steps) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body class="antialiased">
+
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 py-5 bg-transparent">
+        <div class="max-w-7xl mx-auto px-6 flex items-center justify-between">
+            
+            <!-- Logo -->
+            <a href="#" class="flex items-center gap-2 group">
+                <div class="w-8 h-8 bg-gradient-to-br from-indigo-600 to-purple-600 rounded-lg flex items-center justify-center shadow-lg shadow-indigo-500/20 group-hover:shadow-indigo-500/40 transition-all">
+                    <div class="w-4 h-4 border-2 border-white rounded-sm transform rotate-45"></div>
+                </div>
+                <span class="text-xl font-bold tracking-tight text-slate-900">
+                    ZENTIC <span class="font-light text-slate-500">LABS</span>
+                </span>
+            </a>
+
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex items-center gap-8">
+                <a href="#methodology" class="text-sm font-medium text-slate-600 hover:text-indigo-600 transition-colors">Methodology</a>
+                <a href="#portfolio" class="text-sm font-medium text-slate-600 hover:text-indigo-600 transition-colors">Case Studies</a>
+                <a href="#testimonials" class="text-sm font-medium text-slate-600 hover:text-indigo-600 transition-colors">Testimonials</a>
+                <a href="#contact" class="px-5 py-2.5 text-sm font-semibold text-white bg-slate-900 rounded-lg hover:bg-slate-800 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
+                    Free Growth Audit
+                </a>
+            </div>
+
+            <!-- Mobile Toggle -->
+            <button id="mobile-menu-btn" class="md:hidden p-2 text-slate-600 hover:bg-slate-100 rounded-lg">
+                <i data-lucide="menu" class="w-6 h-6"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Dropdown -->
+        <div id="mobile-menu" class="hidden absolute top-full left-0 w-full bg-white border-b border-slate-200 shadow-xl md:hidden flex-col p-6 gap-4">
+            <a href="#methodology" class="mobile-link text-slate-600 font-medium py-2">Methodology</a>
+            <a href="#portfolio" class="mobile-link text-slate-600 font-medium py-2">Case Studies</a>
+            <a href="#testimonials" class="mobile-link text-slate-600 font-medium py-2">Testimonials</a>
+            <a href="#contact" class="mobile-link text-center py-3 bg-indigo-600 text-white rounded-lg font-semibold mt-2">
+                Get Audit
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
+        <!-- Background Globs -->
+        <div class="absolute inset-0 z-0 pointer-events-none overflow-hidden">
+            <div class="absolute top-0 left-1/4 w-96 h-96 bg-indigo-500/10 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob"></div>
+            <div class="absolute top-0 right-1/4 w-96 h-96 bg-purple-500/10 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob animation-delay-2000"></div>
+            <div class="absolute -bottom-8 left-20 w-96 h-96 bg-pink-500/10 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob animation-delay-4000"></div>
+            <!-- Grid Pattern -->
+            <div class="absolute inset-0 opacity-[0.03]" style="background-image: radial-gradient(#6366f1 1px, transparent 1px); background-size: 32px 32px;"></div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-6 relative z-10">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                
+                <!-- Left Content -->
+                <div class="space-y-8">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-green-50 border border-green-200 text-green-700 text-xs font-bold uppercase tracking-wider shadow-sm">
+                        <span class="relative flex h-2 w-2">
+                            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+                            <span class="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
+                        </span>
+                        System Capacity: High
+                    </div>
+
+                    <h1 class="text-5xl lg:text-6xl font-bold tracking-tight leading-[1.1] text-slate-900">
+                        We Don't Buy Clicks. <br />
+                        <span class="text-gradient">We Engineer Profit.</span>
+                    </h1>
+
+                    <p class="text-lg text-slate-600 max-w-lg leading-relaxed">
+                        Stop feeding the algorithm blindly. We deploy high-velocity ad structures, server-side tracking, and psychology-driven funnels to scale revenue, not just costs.
+                    </p>
+
+                    <div class="flex flex-wrap gap-4">
+                        <a href="#contact" class="px-8 py-4 bg-indigo-600 hover:bg-indigo-700 text-white rounded-lg font-semibold transition-all shadow-lg shadow-indigo-500/30 hover:shadow-indigo-500/40 transform hover:-translate-y-0.5 flex items-center gap-2">
+                            Start Your Transformation <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                        </a>
+                        <a href="#" class="px-8 py-4 bg-white hover:bg-slate-50 text-slate-700 border border-slate-200 rounded-lg font-semibold transition-all flex items-center gap-2">
+                            Meet the Strategists
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right Content (Calculator) -->
+                <div class="relative">
+                    <div class="absolute -inset-1 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-2xl blur opacity-20"></div>
+                    <div class="relative bg-white rounded-xl border border-slate-200 shadow-2xl overflow-hidden">
+                        <div class="bg-slate-50 border-b border-slate-200 p-4 flex justify-between items-center">
+                            <div class="flex items-center gap-2 text-slate-700 font-semibold">
+                                <i data-lucide="bar-chart-3" class="w-5 h-5 text-indigo-600"></i>
+                                Growth Simulator
+                            </div>
+                            <div class="flex gap-1.5">
+                                <div class="w-3 h-3 rounded-full bg-red-400/50"></div>
+                                <div class="w-3 h-3 rounded-full bg-yellow-400/50"></div>
+                                <div class="w-3 h-3 rounded-full bg-green-400/50"></div>
+                            </div>
+                        </div>
+
+                        <div class="p-6 space-y-8">
+                            <!-- Slider 1 -->
+                            <div class="space-y-3">
+                                <div class="flex justify-between text-sm font-medium">
+                                    <label class="text-slate-600">Monthly Ad Spend</label>
+                                    <span id="spend-display" class="text-slate-900 font-bold">$15,000</span>
+                                </div>
+                                <input type="range" id="spend-slider" min="1000" max="100000" step="1000" value="15000">
+                            </div>
+
+                            <!-- Slider 2 -->
+                            <div class="space-y-3">
+                                <div class="flex justify-between text-sm font-medium">
+                                    <label class="text-slate-600">Current Monthly Leads</label>
+                                    <span id="leads-display" class="text-slate-900 font-bold">450</span>
+                                </div>
+                                <input type="range" id="leads-slider" min="10" max="5000" step="10" value="450">
+                            </div>
+
+                            <!-- Results -->
+                            <div class="grid grid-cols-2 gap-4 pt-4">
+                                <div class="p-4 bg-red-50 rounded-lg border border-red-100 text-center">
+                                    <div class="text-xs uppercase font-bold text-red-600 tracking-wider mb-1">Tracking Gaps</div>
+                                    <div id="waste-result" class="text-xl font-bold text-red-700">-$3,300</div>
+                                    <div class="text-[10px] text-red-500/80 mt-1">Est. wasted spend</div>
+                                </div>
+                                <div class="p-4 bg-indigo-50 rounded-lg border border-indigo-100 text-center">
+                                    <div class="text-xs uppercase font-bold text-indigo-600 tracking-wider mb-1">Potential Upside</div>
+                                    <div id="upside-result" class="text-xl font-bold text-indigo-700">607</div>
+                                    <div class="text-[10px] text-indigo-500/80 mt-1">Qualified Leads</div>
+                                </div>
+                            </div>
+
+                            <div class="text-[10px] text-slate-400 text-center">
+                                *Projections based on CRO impact & Data Hygiene improvements.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Bar -->
+    <div class="border-y border-slate-200 bg-white/50 backdrop-blur-sm">
+        <div class="max-w-7xl mx-auto px-6 py-12">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div class="space-y-1">
+                    <div class="text-3xl md:text-4xl font-bold text-slate-900">$5M+</div>
+                    <div class="text-xs font-bold text-slate-500 uppercase tracking-widest">Ad Spend Managed</div>
+                </div>
+                <div class="space-y-1">
+                    <div class="text-3xl md:text-4xl font-bold text-slate-900">3.5x</div>
+                    <div class="text-xs font-bold text-slate-500 uppercase tracking-widest">Avg. ROAS Uplift</div>
+                </div>
+                <div class="space-y-1">
+                    <div class="text-3xl md:text-4xl font-bold text-slate-900">40+</div>
+                    <div class="text-xs font-bold text-slate-500 uppercase tracking-widest">Accounts Scaled</div>
+                </div>
+                <div class="space-y-1">
+                    <div class="text-3xl md:text-4xl font-bold text-slate-900">-28%</div>
+                    <div class="text-xs font-bold text-slate-500 uppercase tracking-widest">Avg. CPA Reduction</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Methodology Section -->
+    <section id="methodology" class="py-24 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4">The Modern Growth Stack</h2>
+                <p class="text-slate-600">Manual bidding is dead. We leverage a hybrid of human psychology and algorithmic data structures to force scale.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-white p-8 rounded-xl border border-slate-200 shadow-sm hover:shadow-xl transition-all group relative overflow-hidden">
+                    <div class="absolute top-0 left-0 right-0 h-1 bg-indigo-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
+                    <div class="w-12 h-12 bg-indigo-50 rounded-lg flex items-center justify-center mb-6 text-indigo-600">
+                        <i data-lucide="shield-check" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Hybrid Match Strategy</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        We don't just trust Broad Match. We use Exact Match for control and layered negative keyword lists to filter intent, ensuring you only pay for qualified prospects.
+                    </p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-white p-8 rounded-xl border border-slate-200 shadow-sm hover:shadow-xl transition-all group relative overflow-hidden">
+                    <div class="absolute top-0 left-0 right-0 h-1 bg-purple-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
+                    <div class="w-12 h-12 bg-purple-50 rounded-lg flex items-center justify-center mb-6 text-purple-600">
+                        <i data-lucide="database" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Solidified Data</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Garbage in, garbage out. We implement server-side tracking and Enhanced Conversions to feed the ad platforms clean data, training the AI to find your best customers.
+                    </p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-white p-8 rounded-xl border border-slate-200 shadow-sm hover:shadow-xl transition-all group relative overflow-hidden">
+                    <div class="absolute top-0 left-0 right-0 h-1 bg-blue-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
+                    <div class="w-12 h-12 bg-blue-50 rounded-lg flex items-center justify-center mb-6 text-blue-600">
+                        <i data-lucide="mouse-pointer-2" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Obsessive CRO</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Traffic is useless if it doesn't convert. We engineer high-converting landing pages with personalized experiences that turn expensive clicks into revenue.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Studies Section -->
+    <section id="portfolio" class="py-24 bg-white relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="mb-16">
+                <span class="inline-block px-3 py-1 mb-4 text-xs font-bold tracking-wider text-indigo-600 bg-indigo-50 rounded-full uppercase">
+                    Proven Performance
+                </span>
+                <h2 class="text-4xl font-bold text-slate-900 mb-4">We Don't Guess. We Scale.</h2>
+                <p class="text-slate-600 max-w-xl">
+                    Managing millions in ad spend across high-stakes verticals. Here is what happens when you combine data hygiene with creative strategy.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Case 1 -->
+                <div class="group bg-slate-50 rounded-2xl p-8 border border-slate-100 hover:border-indigo-100 transition-colors">
+                    <div class="flex justify-between items-start mb-8">
+                        <div class="p-3 bg-white rounded-xl shadow-sm text-indigo-600">
+                            <i data-lucide="activity" class="w-6 h-6"></i>
+                        </div>
+                        <span class="text-xs font-bold text-slate-400 uppercase">MedTech</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-slate-900 mb-2">3.5x Patient Volume</h3>
+                    <p class="text-slate-600 text-sm mb-6">
+                        Leveraged symptom-specific intent clusters and HIPAA-compliant tracking to scale intake.
+                    </p>
+                    <div class="space-y-2 pt-6 border-t border-slate-200">
+                        <div class="flex justify-between text-sm">
+                            <span class="text-slate-500">Spend Managed</span>
+                            <span class="font-semibold text-slate-900">$150k/mo</span>
+                        </div>
+                        <div class="flex justify-between text-sm">
+                            <span class="text-slate-500">CPA Reduction</span>
+                            <span class="font-bold text-green-600">-45%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Case 2 -->
+                <div class="group bg-slate-50 rounded-2xl p-8 border border-slate-100 hover:border-indigo-100 transition-colors">
+                    <div class="flex justify-between items-start mb-8">
+                        <div class="p-3 bg-white rounded-xl shadow-sm text-indigo-600">
+                            <i data-lucide="layout-template" class="w-6 h-6"></i>
+                        </div>
+                        <span class="text-xs font-bold text-slate-400 uppercase">SaaS</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-slate-900 mb-2">Pipeline Velocity</h3>
+                    <p class="text-slate-600 text-sm mb-6">
+                        Shifted focus from leads to qualified demos using offline conversion imports and CRM integration.
+                    </p>
+                    <div class="space-y-2 pt-6 border-t border-slate-200">
+                        <div class="flex justify-between text-sm">
+                            <span class="text-slate-500">Spend Managed</span>
+                            <span class="font-semibold text-slate-900">$120k/mo</span>
+                        </div>
+                        <div class="flex justify-between text-sm">
+                            <span class="text-slate-500">Lead Quality</span>
+                            <span class="font-bold text-green-600">2x Increase</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Case 3 -->
+                <div class="group bg-slate-50 rounded-2xl p-8 border border-slate-100 hover:border-indigo-100 transition-colors">
+                    <div class="flex justify-between items-start mb-8">
+                        <div class="p-3 bg-white rounded-xl shadow-sm text-indigo-600">
+                            <i data-lucide="trending-up" class="w-6 h-6"></i>
+                        </div>
+                        <span class="text-xs font-bold text-slate-400 uppercase">FinTech</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-slate-900 mb-2">Qualified Assets</h3>
+                    <p class="text-slate-600 text-sm mb-6">
+                        High LTV bidding strategy focused on funded accounts rather than just registrations.
+                    </p>
+                    <div class="space-y-2 pt-6 border-t border-slate-200">
+                        <div class="flex justify-between text-sm">
+                            <span class="text-slate-500">Spend Managed</span>
+                            <span class="font-semibold text-slate-900">$200k/mo</span>
+                        </div>
+                        <div class="flex justify-between text-sm">
+                            <span class="text-slate-500">ROAS</span>
+                            <span class="font-bold text-green-600">410%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Philosophy Section -->
+    <section id="philosophy" class="py-24 bg-slate-900 relative overflow-hidden">
+        <!-- Gradient Background -->
+        <div class="absolute inset-0 bg-gradient-to-br from-slate-900 to-indigo-950"></div>
+        <div class="absolute top-0 right-0 w-2/3 h-full bg-indigo-600/10 transform -skew-x-12 origin-bottom-right"></div>
+
+        <div class="max-w-7xl mx-auto px-6 relative z-10">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                
+                <div class="space-y-8">
+                    <div class="flex items-center gap-2 text-indigo-400 text-xs font-bold tracking-widest uppercase">
+                        <i data-lucide="zap" class="w-4 h-4"></i>
+                        Our Philosophy
+                    </div>
+                    
+                    <h2 class="text-4xl font-bold leading-tight text-white">
+                        Algorithms find people. <br />
+                        <span class="text-indigo-400">Humans persuade them.</span>
+                    </h2>
+                    
+                    <div class="space-y-4 text-slate-300 leading-relaxed">
+                        <p>
+                            Too many agencies hide behind dashboards and confusing metrics. We believe in radical transparency and the power of empathy.
+                        </p>
+                        <p>
+                            We don't just tweak CPCs. We analyze customer fears, desires, and friction points to craft personal narratives that resonate. The algorithm is the vehicle, but the message is the fuel.
+                        </p>
+                    </div>
+
+                    <div class="flex items-center gap-4 pt-4">
+                        <div class="w-12 h-12 rounded-full bg-slate-700 border-2 border-indigo-500 flex items-center justify-center text-xs font-bold text-white">ZZ</div>
+                        <div>
+                            <div class="font-bold text-white">Zia Zafar</div>
+                            <div class="text-sm text-indigo-400">Lead Strategist</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-dark p-8 rounded-2xl">
+                    <h3 class="text-xl font-bold mb-6 text-white">The "Partner" Promise</h3>
+                    <ul class="space-y-6">
+                        <li class="flex gap-4">
+                            <div class="flex-shrink-0 w-6 h-6 rounded-full bg-green-500/20 flex items-center justify-center text-green-400">
+                                <i data-lucide="check-circle-2" class="w-3.5 h-3.5"></i>
+                            </div>
+                            <span class="text-slate-200">No "set and forget" – weekly optimization sprints.</span>
+                        </li>
+                        <li class="flex gap-4">
+                            <div class="flex-shrink-0 w-6 h-6 rounded-full bg-green-500/20 flex items-center justify-center text-green-400">
+                                <i data-lucide="check-circle-2" class="w-3.5 h-3.5"></i>
+                            </div>
+                            <span class="text-slate-200">Transparent reporting with live dashboards.</span>
+                        </li>
+                        <li class="flex gap-4">
+                            <div class="flex-shrink-0 w-6 h-6 rounded-full bg-green-500/20 flex items-center justify-center text-green-400">
+                                <i data-lucide="check-circle-2" class="w-3.5 h-3.5"></i>
+                            </div>
+                            <span class="text-slate-200">Direct access to strategists, not just account managers.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 bg-slate-900 relative overflow-hidden border-t border-white/5">
+        <!-- Ambient glow -->
+        <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-indigo-600/20 rounded-full blur-[120px] pointer-events-none"></div>
+
+        <div class="max-w-xl mx-auto px-6 relative z-10 text-center">
+            <div class="inline-flex p-3 bg-slate-800 rounded-full text-indigo-400 mb-6 shadow-lg">
+                <i data-lucide="search" class="w-6 h-6"></i>
+            </div>
+            
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">
+                Get a Diagnosis, Not a Sales Pitch.
+            </h2>
+            <p class="text-slate-400 mb-10">
+                Request a free <span class="text-white font-semibold">Growth Protocol Audit</span>. We'll tear down your account structure, check tracking health, and identify CRO gaps.
+            </p>
+
+            <form class="glass-dark p-8 rounded-2xl shadow-2xl space-y-4 text-left">
+                <div>
+                    <label class="block text-xs font-bold text-slate-400 uppercase mb-2">Work Email</label>
+                    <input type="email" placeholder="name@company.com" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-4 py-3 text-white placeholder:text-slate-600 focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition-all">
+                </div>
+                
+                <div>
+                    <label class="block text-xs font-bold text-slate-400 uppercase mb-2">Website URL</label>
+                    <input type="text" placeholder="company.com" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-4 py-3 text-white placeholder:text-slate-600 focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition-all">
+                </div>
+
+                <button type="submit" class="w-full bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-500 hover:to-purple-500 text-white font-bold py-4 rounded-lg transition-all shadow-lg shadow-indigo-900/50 mt-4">
+                    Request Audit Protocol
+                </button>
+
+                <p class="text-xs text-slate-500 mt-4 text-center">
+                    Strictly limited capacity. Qualified businesses only.
+                </p>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-slate-200 py-12">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
+            <div class="flex items-center gap-2">
+                <div class="w-6 h-6 bg-gradient-to-br from-indigo-600 to-purple-600 rounded flex items-center justify-center">
+                    <div class="w-3 h-3 border border-white rounded-sm transform rotate-45"></div>
+                </div>
+                <span class="text-lg font-bold text-slate-900">
+                    ZENTIC <span class="font-light text-slate-500">LABS</span>
+                </span>
+            </div>
+
+            <div class="text-sm text-slate-500">
+                &copy; 2025 Zentic Labs. All rights reserved.
+            </div>
+
+            <div class="flex gap-6">
+                <a href="#" class="text-slate-400 hover:text-indigo-600 transition-colors"><i data-lucide="twitter" class="w-5 h-5"></i></a>
+                <a href="#" class="text-slate-400 hover:text-indigo-600 transition-colors"><i data-lucide="linkedin" class="w-5 h-5"></i></a>
+                <a href="#contact" class="text-slate-400 hover:text-indigo-600 transition-colors text-sm font-semibold">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="/script.js"></script>
+</body>
+</html>
